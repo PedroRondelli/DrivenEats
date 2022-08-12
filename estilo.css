@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.all {
+  margin-top: 92px;
+  width: 100vw;
+  margin-bottom: 70px;
+  background-color: #E5E5E5;
+}
+
+.barratopo {
+  box-shadow: 0px 0px 10px 0px black;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 92px;
+  background-color: #cf2b2b;
+  padding-left: 21px;
+}
+
+.nomerestaurante h1 {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  color: white;
+}
+
+.nomerestaurante p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+}
+
+.espaço {
+  height: 45px;
+  background-color: #E5E5E5;
+}
+
+.categoria {
+  height: auto;
+}
+
+.titulocategoria {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.opcoes {
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: scroll;
+}
+.escolha {
+  width: 172px;
+  height: 190px;
+  border: 1px solid rgba(12, 12, 12, 0.2);
+  border-radius: 9px;
+  padding: 14px;
+  margin: 0 10px;
+  background-color: white;
+}
+.escolha img {
+  border-radius: 14px;
+  width:144px ;
+  height:87px ;
+}
+.escolha h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.escolha p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: #a6a6a6;
+  text-align: justify;
+}
+.escolha h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 95px;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  background-color: #FFFFFF;
+}
+.botao p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.botao button {
+  background-color: #CBCBCB;
+  text-align: center;
+  border-radius: 24px;
+  padding: 9px 49px;
+  margin: 0 auto;
+  border:1px solid rgba(0, 0, 0, 0.3)
+}
+@media (max-width: 900px) {
+  .opcoes {
+    justify-content: flex-start;
+  }
+}
