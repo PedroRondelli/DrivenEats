@@ -2,14 +2,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 .all {
   margin-top: 92px;
   width: 100vw;
   margin-bottom: 70px;
   background-color: #E5E5E5;
+  box-sizing: border-box;
 }
 
 .barratopo {
@@ -50,7 +51,10 @@
 }
 
 .categoria {
-  height: auto;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .titulocategoria {
@@ -62,7 +66,7 @@
 }
 
 .opcoes {
-  height: 210px;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -76,6 +80,10 @@
   padding: 14px;
   margin: 0 10px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F; */
 }
 .escolha img {
   border-radius: 14px;
@@ -87,22 +95,37 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin: 8px 0px;
 }
 .escolha p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: #a6a6a6;
-  text-align: justify;
+  text-align: left;
 }
 .escolha h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+}
+.icone{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.escolha .icone img{
+  width:16px;
+  height:16px;
+  display: none;
+
+}
+.selecionado{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
 .botao {
   display: flex;
