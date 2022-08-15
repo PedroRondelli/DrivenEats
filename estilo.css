@@ -181,6 +181,8 @@
 .botaofinal {
   background-color: #32B72F;
   color: rgba(255, 255, 255, 1);
+  width: 84%;
+  height: 59%;
 }
 .finalizar{
   font-family: "Roboto";
