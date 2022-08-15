@@ -1,7 +1,11 @@
+let contagem = 0
 function selecionar(divescolha){
    const escolhido = document.querySelector(".selecionado ")
    if(escolhido!== null){
     escolhido.classList.toggle("selecionado")
+   }
+   else{
+    contagem = contagem + 1
    }
    divescolha.classList.toggle("selecionado")
 }
@@ -10,12 +14,18 @@ function selecionarbebida(escolha){
     if(escolhido!== null){
      escolhido.classList.toggle("bebidaselecionada")
     }
+    else{
+        contagem = contagem + 1
+    }
     escolha.classList.toggle("bebidaselecionada")
  }
  function selecionarsobremesa(escolhasobre){
     const escolhida = document.querySelector(".sobremesaselecionada ")
     if(escolhida!== null){
      escolhida.classList.toggle("sobremesaselecionada")
+    }
+    else{
+        contagem = contagem + 1
     }
     escolhasobre.classList.toggle("sobremesaselecionada")
  }
@@ -49,5 +59,13 @@ function aparecericonesobremesa(numeracaosobremesa){
     checkatual.classList.remove("vasco")
     checkatual.classList.add("checksobremesa")
 
+}
+function liberar(){
+    if(contagem>2){
+        botaoliberado=document.querySelector(".finalizar")
+        botaoliberado.innerHTML="Fechar pedido"
+        botaoliberado.classList.remove("botaoinicial")
+        botaoliberado.classList.add("botaofinal")
+    }
 }
 

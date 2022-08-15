@@ -168,12 +168,27 @@
   color: rgba(255, 255, 255, 1);
 }
 .botao button {
-  background-color: #CBCBCB;
+  /* background-color: #CBCBCB; */
   text-align: center;
   border-radius: 24px;
   padding: 9px 49px;
   margin: 0 auto;
   border:1px solid rgba(0, 0, 0, 0.3)
+}
+.botaoinicial{
+  background-color: #CBCBCB;
+}
+.botaofinal {
+  background-color: #32B72F;
+  color: rgba(255, 255, 255, 1);
+}
+.finalizar{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  
 }
 @media (max-width: 900px) {
   .opcoes {
